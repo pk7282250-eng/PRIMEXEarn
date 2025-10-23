@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Channel & Redirect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(120deg, #1e3c72, #2a5298, #1abc9c, #f7b733);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      padding: 40px 30px;
+      text-align: center;
+      max-width: 380px;
+      margin: 20px;
+    }
+    .money-icon {
+      font-size: 50px;
+      margin-bottom: 18px;
+    }
+    .rating {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #f7b733;
+    }
+    .btn {
+      background: #f7b733;
+      color: #1e3c72;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 32px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 12px 0;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1abc9c;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="money-icon">💰</div>
+    <div class="rating">⭐⭐⭐⭐⭐</div>
+    <h2>Join Our Channel</h2>
+    <p>Get professional insights, money tips, and high ratings!</p>
+    <button class="btn" onclick="joinChannel('https://t.me/+bQUSBWIVT-dmZjA9')">Join Channel 1</button>
+    <button class="btn" onclick="joinChannel('https://t.me/primexchatgc')">Join Channel 2</button>
+    <p style="margin-top:18px;font-size:14px;">After joining, click below to continue:</p>
+    <button class="btn" onclick="redirectWebsite()">Continue to Website</button>
+  </div>
+
+  <script>
+    function joinChannel(url) {
+      window.open(url, '_blank');
+    }
+    function redirectWebsite() {
+      window.location.href = "https://m.thedollars.top/?utm_medium=paid&utm_source=fb&utm_id=120240541369800311&utm_content=120240541369810311&utm_term=120240541369790311&utm_campaign=120240541369800311&fbclid=IwVERDUANlTFFleHRuA2FlbQIxMAABHkH4R_Bh4OPKJLgEDtcyLzT8u-B2qX_w10g9Cr2n2X8ujvC8_9utCm0xC1c2_aem_So25rywgcx8X6Jy_083U6Q";
+    }
+  </script>
+</body>
+</html>
